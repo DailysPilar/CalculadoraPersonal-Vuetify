@@ -1,7 +1,6 @@
 import '@mdi/font/css/materialdesignicons.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -11,8 +10,11 @@ const vuetify = createVuetify({
   components,
   directives,
   defaults:{
-    VBtn: { variant: "outlined" },
-    VTextField: { variant: 'solo' },
+    VBtn: { 
+      variant: "outlined",
+      density:"comfortable",
+     }
+
   },
   theme:{
     defaultTheme:'dark'
